@@ -14,10 +14,10 @@ function Recipe() {
           );
         const detailData = await data.json();
           setDetails(detailData);
-          console.log(detailData);
     };
 
     useEffect (() => {
+        // eslint-disable-next-line
         fetchDetails();
     }, [params.name]);
     return (
